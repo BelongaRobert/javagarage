@@ -46,4 +46,9 @@ public abstract class Vehicle {
         this.year = year;
     }
 
+	@Override
+	public String toString() {
+		return "Vehicle [ID=" + ID + ", make=" + make + ", model=" + model + ", year=" + year + "]";
+	}
+
 }

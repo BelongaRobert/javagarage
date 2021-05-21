@@ -11,14 +11,17 @@ public class Garage {
 		super();
 		this.GarageName = "Robert's Garage";
 	}
-	List<Vehicle> GarageList = new ArrayList<>();
+	List<Object> GarageList = new ArrayList<Object>();
 	
 	
-	public Garage(List<Vehicle> GarageList) {
+	public Garage(ArrayList<Object> GarageList) {
 		this.GarageList = GarageList;
 		
 	}
 	
+//	public void printVehicle() {
+//		for (Object Vehicles)
+//	}
 
 	public void addVehicle(Vehicle bought) {
 		this.GarageList.add(bought);
@@ -42,6 +45,11 @@ public class Garage {
 
 	public void setGarageName(String garageName) {
 		GarageName = garageName;
+	}
+
+	@Override
+	public String toString() {
+		return "Vehicles in GarageList=" + GarageList + "]";
 	}
 
 

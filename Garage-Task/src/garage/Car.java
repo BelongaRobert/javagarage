@@ -16,4 +16,12 @@ public class Car extends Vehicle {
     public void setfuelType(String fuelType) {
         this.fuelType = fuelType;
     }
+
+	@Override
+	public String toString() {
+		return "Car [fuelType=" + fuelType + ", ID=" + ID + ", make=" + make + ", model=" + model + ", year=" + year
+				+ "]";
+	}
+
+
 }

@@ -16,4 +16,11 @@ public class Motorcycle extends Vehicle {
     public void setengineSize(int engineSize) {
         this.engineSize = engineSize;
     }
+
+	@Override
+	public String toString() {
+		return "Motorcycle [engineSize=" + engineSize + ", ID=" + ID + ", make=" + make + ", model=" + model + ", year="
+				+ year + "]";
+	}
+
 }

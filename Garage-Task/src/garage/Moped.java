@@ -15,4 +15,12 @@ public class Moped extends Vehicle{
     public void setmaxMph(int maxMph) {
         this.maxMph = maxMph;
     }
+
+	@Override
+	public String toString() {
+		return "Moped [maxMph=" + maxMph + ", ID=" + ID + ", make=" + make + ", model=" + model + ", year=" + year
+				+ "]";
+	}
+
+    
 }
